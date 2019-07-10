@@ -1,0 +1,40 @@
+{
+    "config": {
+        "id": "fp-temp",
+        "location": "Front Porch",
+        "description": "Measures the temperature outside",
+        "commands": [
+            "restart", 
+            "reportTemp", 
+            "ack"
+        ]
+    },
+    "commands": [
+        {
+            "command": "restart",
+            "file": "restart.ts"
+        },
+        {
+            "command": "reportTemp",
+            "file": "fp-temp.ts"
+        },
+        {
+            "command": "ack",
+            "file": "ack.ts"
+        }
+    ],
+    "files": [
+        {
+            "title": "fp-temp.ts",
+            "url": "files/fp-temp.ts"
+        },
+        {
+            "title": "restart.ts",
+            "url": "files/restart.ts"
+        },
+        {
+            "title": "ack.ts",
+            "url": "files/ack.ts"
+        }
+    ]
+}
